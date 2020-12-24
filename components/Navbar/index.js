@@ -3,33 +3,29 @@ import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 
 const Navbar = () => {
   return (
-    <View style={{height: 54, flexDirection: 'row'}}>
-      <TouchableOpacity
-        style={styles.container}>
+    <View style={{height: 60, flexDirection: 'row'}}>
+      <TouchableOpacity style={styles.container}>
         <Image
           style={styles.imageStyling}
           source={require('../../assets/icon/home.png')}
         />
         <Text style={styles.textStyling}>Home</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.container}>
+      <TouchableOpacity style={styles.container}>
         <Image
           style={styles.imageStyling}
           source={require('../../assets/icon/activity.png')}
         />
         <Text style={styles.textStyling}>Activity</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.container}>
+      <TouchableOpacity style={styles.container}>
         <Image
           style={styles.imageStyling}
           source={require('../../assets/icon/payment.png')}
         />
         <Text style={styles.textStyling}>Payment</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.container}>
+      <TouchableOpacity style={styles.container}>
         <Image
           style={styles.imageStyling}
           source={require('../../assets/icon/inbox.png')}
@@ -61,6 +57,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'white',
   },
 });
 export default Navbar;
