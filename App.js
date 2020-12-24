@@ -6,42 +6,28 @@ import {
   View,
   Text,
   StatusBar,
+  Image,
+  TextInput,
+  Button,
+  TouchableOpacity,
 } from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+// import MainMenu from './components/MainMenu';
+import Navbar from './components/Navbar';
+import PanelBar from './components/PanelBar';
+import SearchBar from './components/SearchBar/Index';
+import {green} from './config/config';
 
 const App = () => {
   return (
-    <View>
-      <Text>Grab</Text>
+    <View style={{flex: 1}}>
+      <ScrollView>
+        <SearchBar />
+        <PanelBar />
+        {/* <MainMenu /> */}
+      </ScrollView>
+      <Navbar />
     </View>
-    // <>
-    //   {/* <StatusBar barStyle="dark-content" /> */}
-    //   <SafeAreaView>
-    //     <ScrollView
-    //       contentInsetAdjustmentBehavior="automatic"
-    //       style={styles.scrollView}>
-    //       <Header />
-    //       {global.HermesInternal == null ? null : (
-    //         <View style={styles.engine}>
-    //           <Text style={styles.footer}>Engine: Hermes</Text>
-    //         </View>
-    //       )}
-    //     </ScrollView>
-    //   </SafeAreaView>
-    // </>
   );
 };
-
-
-const styles = {
-  
-}
 
 export default App;
